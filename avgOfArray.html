@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Avg</title>
+  </head>
+  <body>
+    <script>
+      const arAvg = (ar) => {
+        let t = 0;
+        for (let num of ar) {
+          t += num;
+        }
+        return t/ar.length;
+      };
+
+      let a = [3,4,5,6,9,10];
+      document.write(arAvg(a));
+    </script>
+  </body>
+</html>

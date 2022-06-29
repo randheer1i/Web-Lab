@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a1 = [];
+        var a2 = [];
+        var s1 = prompt("Enter size 1");
+        var s2 = prompt("Enter size 2");
+        var flag = 0;
+        for(let i = 0; i < s1; i++)
+            a1[i] = prompt("Enter the element " + (i + 1) + " for a1");
+
+        for(let i = 0; i < s2; i++)
+            a2[i] = prompt("Enter the element " + (i + 1) + " for a2");
+        if(s1!=s2){
+            flag=1;
+        }
+        else{
+                for(let i = 0; i < s1; i++) {
+                if(a1[i] != a2[i]) {
+                    flag = 1;
+                    break;
+                }
+            }   
+        }
+            
+            if(flag == 0)
+                document.write("True");
+            else   
+                document.write("False");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

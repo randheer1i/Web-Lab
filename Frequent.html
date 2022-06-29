@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequent</title>
+    <script>
+        function mostFreq(arry, l)
+	{
+		
+		arry.sort();
+		
+		let max_c = 1, res = arry[0];
+		let curr_c = 1;
+		
+		for (let i = 1; i < n; i++)
+		{
+			if (arry[i] == arry[i - 1])
+				curr_c++;
+			else
+				curr_c = 1;
+			
+			if (curr_c > max_c)
+			{
+				max_c = curr_c;
+				res = arry[i - 1];
+			}
+
+		}
+		
+		return res;
+	}
+		let ar = [5, 'n', 'n', 'n',2, 'n',9, 'c', 3, 'b', 1, 2, 3, 'a'];
+        let n = ar.length;
+		document.write(mostFreq(ar,n));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

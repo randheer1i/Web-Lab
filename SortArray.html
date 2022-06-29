@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array</title>
+    <script>
+        var ar = [5,1,-1,0,2,3];
+        for(let i = 0; i < ar.length - 1; i++) {
+            var minm = i;
+            for(let j = i + 1; j < ar.length; j++) {
+                if(ar[minm] > ar[j]) {
+                    minm = j;
+                }
+            }
+            if(i != minm) {
+                let temp = ar[minm];
+                ar[minm] = ar[i];
+                ar[i] = temp;
+            }
+        }
+        for(let i = 0; i < ar.length; i++) {
+            document.write(ar[i] + " ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
